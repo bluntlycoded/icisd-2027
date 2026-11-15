@@ -99,8 +99,12 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .partners-inner { padding: 28px 0; display: flex; align-items: center; gap: 36px; }
 .partners-label { margin: 0; flex: 0 0 210px; font-size: .82rem; color: var(--muted); line-height: 1.45; }
 .partner-logos { flex: 1; display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap; }
-.partner-logos img { height: 52px; width: auto; max-width: 170px; object-fit: contain; filter: grayscale(1); opacity: .75; transition: filter .3s, opacity .3s; }
-.partner-logos li:hover img { filter: none; opacity: 1; }
+.partner-logos img { height: 56px; width: auto; max-width: 180px; object-fit: contain; transition: transform .3s; }
+.partner-logos li:hover img { transform: scale(1.04); }
+.partner-logos img[alt*="Newcastle"], .partner-logos img[alt*="Birmingham"], .partner-logos img[alt*="Global Degrees"] { height: 76px; }
+.sponsors { background: var(--ivory); border-top: 1px solid var(--line); }
+.sponsor-strip { justify-content: flex-start; gap: 56px; }
+.sponsor-strip img { height: 56px; max-width: 200px; }
 
 /* ---------- Sections ---------- */
 .section { padding: clamp(72px, 10vw, 128px) 0; }
@@ -244,9 +248,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .footer-brand img { width: 64px; height: 64px; border-radius: 12px; background: #fff; padding: 3px; object-fit: contain; flex: none; }
 .footer-brand strong { color: #fff; font: 500 1.2rem/1.4 var(--serif); }
 .site-footer h4 { color: #fff; font: 600 .78rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; margin-bottom: 1.1rem; }
-.sponsor-logos { display: flex; gap: 12px; flex-wrap: wrap; }
-.sponsor-logos li { background: #fff; border-radius: 10px; width: 96px; height: 64px; display: grid; place-items: center; padding: 8px; }
-.sponsor-logos img { max-height: 48px; width: auto; object-fit: contain; }
 .footer-links { display: grid; gap: .5rem; }
 .footer-links a { text-decoration: none; }
 .footer-links a:hover { color: #fff; }
